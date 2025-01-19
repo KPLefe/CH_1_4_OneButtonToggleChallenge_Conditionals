@@ -24,22 +24,15 @@ struct ContentView: View {
                 .fontWeight(.ultraLight)
         }
         Spacer()
-        HStack {
+        HStack { //  
             Button("Press Me!") {
-                if (imageTextName == "") {
-                    imageTextName = "You Are Awesome!"
-                    systemImageName = "hand.thumbsup"
-                } else if (imageTextName == "You Are Awesome!") {
-                    systemImageName = "sun.max.fill"
+                if (imageTextName == "You Are Awesome!") {
                     imageTextName = "You Are Great"
-                } else if (imageTextName == "You Are Great") {
-                    systemImageName = "hand.thumbsup"
-                    imageTextName = "You Are Awesome!"
+                    systemImageName = "hand.thumbsup.fill"
                 } else {
                     imageTextName = "You Are Awesome!"
-                    systemImageName = "hand.thumbsup"
+                    systemImageName = "sun.max.fill"
                 }
-
                 
             }
         }
@@ -47,7 +40,7 @@ struct ContentView: View {
         .tint(.orange)
         .font(.title2)
         .padding()
-     }
+    }
 }
 
 #Preview {
