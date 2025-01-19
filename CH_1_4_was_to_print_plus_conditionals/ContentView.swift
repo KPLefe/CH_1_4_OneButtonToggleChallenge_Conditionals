@@ -24,13 +24,16 @@ struct ContentView: View {
                 .fontWeight(.ultraLight)
         }
         Spacer()
-        HStack { //  
+        HStack { //
             Button("Press Me!") {
-                if (imageTextName == "You Are Awesome!") {
-                    imageTextName = "You Are Great"
+                let message1 = "You are Awesome!"
+                let message2 = "You are Great"
+                
+                if (imageTextName == message1) {
+                    imageTextName = message2
                     systemImageName = "hand.thumbsup.fill"
                 } else {
-                    imageTextName = "You Are Awesome!"
+                    imageTextName = message1
                     systemImageName = "sun.max.fill"
                 }
                 
